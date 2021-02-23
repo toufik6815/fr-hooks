@@ -1,8 +1,166 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
   margin: 0;
   padding: 0;
 }
-.App {
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main_div {
+  background: rgb(73, 190, 73);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.centerDiv {
+  background: #f4f4f4;
+  width: 25%;
+  height: 70vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  box-shadow: 5px 3px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.centerDiv .title {
+  width: 90%;
+  height: 100px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  background: rgb(73, 190, 73);
+}
+
+.centerDiv h1 {
+  font-size: 40px;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.centerDiv h1 span{
+  font-size: 17px;
+  color: #c9b9b9;
+}
+
+.item_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.item_box input {
+  width: 80%;
+  height: 42px;
+  border: none;
+  border-bottom: 2px solid rgb(73, 190, 73);
+  outline: none;
+  padding: 0 15px;
+}
+.value_cross,
+.item_box .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 6px;
+  outline: none;
+  text-align: center;
+  background: rgb(73, 190, 73);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.todo_items {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.value_box {
+  display: flex;
+}
+
+.value_cross {
+  margin-top: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.value_cross:hover {
+  background: red;
+}
+
+.todo_items ol li {
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  margin: 6px 0;
+  margin-left: 3px;
+  background: rgb(73, 190, 73);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 100%;
+}
+
+@media (max-width: 980px) {
+  .centerDiv {
+    background: #f4f4f4;
+    width: 41%;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 5px 3px 25px -5px rgb(0 0 0 / 50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .centerDiv {
+    background: #f4f4f4;
+    width: 70%;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 5px 3px 25px -5px rgb(0 0 0 / 50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .centerDiv {
+    background: #f4f4f4;
+    width: 90%;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 5px 3px 25px -5px rgb(0 0 0 / 50%);
+  }
+}
+
+/* .App {
   text-align: center;
   background: #7f8083;
   width: 100%;
@@ -33,4 +191,4 @@
    outline: none;
    cursor: pointer;
    margin: 0 10px;
- }
+ } */
